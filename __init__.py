@@ -5,6 +5,10 @@ from haishoku.haishoku import Haishoku
 
 app = Flask(__name__)
 
+@app.route("/")
+def root():
+    return "success"
+
 @app.route("/getcolor",methods=['post'])
 def get_color():
 
