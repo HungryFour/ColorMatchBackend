@@ -1,2 +1,2 @@
 Flask
-haishoku>=1.1.6
+haishoku>=1.1.4
