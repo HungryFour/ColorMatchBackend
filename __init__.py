@@ -2,7 +2,7 @@ from macpath import join
 
 from flask import Flask,request,jsonify
 from haishoku.haishoku import Haishoku
-from qiniu import Auth
+# from qiniu import Auth
 app = Flask(__name__)
 
 @app.route("/")
