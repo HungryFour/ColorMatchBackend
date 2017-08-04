@@ -6,11 +6,13 @@ BaseDevUrl: http://dev.wjmwjmwb.com #开发环境(暂时未启用)
 
 [通过图片URL获取图片配色方案](#通过图片URL获取图片配色方案)
 
+[获取七牛上传token](#获取七牛上传token)
+
 <a name = "通过图片URL获取图片配色方案">
 
 ####  通过图片URL获取图片配色方案 
 
-URL：/getcolor
+URL：/color
 
 Method: Post
 
@@ -35,7 +37,8 @@ Return:
                 "G": 201,
                 "R": 0
             },
-            "percentage": 0.71
+            "percentage": 0.71,
+            "hex":"#2da4ff"
         },
         {
             "RGB": {
@@ -43,9 +46,28 @@ Return:
                 "G": 46,
                 "R": 44
             },
-            "percentage": 0.09
+            "percentage": 0.09,
+            "hex":"#2da4ff"
         },
         ....
     ]
 }
 ```
+
+<a name = "获取七牛上传token">
+
+####  获取七牛上传token 
+
+URL：/uploadtoken
+
+Method: Get
+
+Params: nil
+
+Return: 
+
+```json
+{
+    "code": 200, #状态码 200正确 501是错误码
+    "token": "271mDStmwp900AFRIvQ8S6d-y:RIV9LXGILHPRyIC1Mb6nfMIXInQ=:eyJzY29wZSI6InBob3RvIi"
+}
