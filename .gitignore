@@ -115,6 +115,4 @@ celerybeat-schedule
 venv/
 ENV/
 
-echo '.idea' >> .gitignore
-
 config.json
