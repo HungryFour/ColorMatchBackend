@@ -56,13 +56,13 @@ def get_color():
                        "G":p_d[1],
                        "B":p_d[2]
                    },
-                   "hex":hex_color,
-                   "url":image_url
+                   "hex":hex_color
             }
             palette_array.append(dic)
 
         return jsonify({
             "code":200,
+            "url": image_url,
             "dominant": dominant,
             "palette": palette_array
         })
