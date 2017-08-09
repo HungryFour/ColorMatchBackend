@@ -50,12 +50,14 @@ def get_color():
             hex_color = "#"+r_hex+g_hex+b_hex
 
             dic = {"percentage":p_percentage,
+                   "rgb":"R:"+str(p_d[0])+" G:"+str(p_d[1])+" B:"+str(p_d[2]),
                    "RGB":{
                        "R":p_d[0],
                        "G":p_d[1],
                        "B":p_d[2]
                    },
-                   "hex":hex_color
+                   "hex":hex_color,
+                   "url":image_url
             }
             palette_array.append(dic)
 
