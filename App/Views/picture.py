@@ -33,17 +33,17 @@ def get_color():
             if None == b_hex or r_hex=="":
                 b_hex = "00"
             if len(r_hex) == 1:
-                if int(p_d[0]<10):
+                if int(p_d[0])<16:
                     r_hex = "0"+r_hex
                 else:
                     r_hex = r_hex+"0"
             if len(g_hex) == 1:
-                if int(p_d[1]<10):
+                if int(p_d[1])<16:
                     g_hex = "0"+g_hex
                 else:
                     g_hex = g_hex+"0"
             if len(b_hex) == 1:
-                if int(p_d[2]<10):
+                if int(p_d[2])<16:
                     b_hex = "0"+b_hex
                 else:
                     b_hex = b_hex+"0"
