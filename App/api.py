@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_restful import Api
-from App.Views.picture import RootClass
-from App.Views.picture import GetColorClass
-from App.Views.qiniu import UploadTokenClass
+
+from Views.picture import RootClass, GetColorClass
+from Views.qiniu import UploadTokenClass
 
 app = Flask(__name__)
 api = Api(app)
